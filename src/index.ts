@@ -4,7 +4,7 @@ import { PrismaPg } from "@prisma/adapter-pg";
 import bcrypt from "bcryptjs";
 import express from "express";
 import jwt from "jsonwebtoken";
-import { verifyToken, AuthRequest } from "./middlewares/auth";
+import { verifyToken, AuthRequest } from "./middlewares/auth.js";
 // With AuthRequest, we can now access req.userId in our route handlers,
 // which is set by the verifyToken middleware after validating the JWT
 // and checking the user in the database.
